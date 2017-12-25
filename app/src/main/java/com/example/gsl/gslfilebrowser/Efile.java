@@ -22,6 +22,6 @@ public class Efile {
         if (getFile() == null){
             return "";
         }
-        return getFile().getName();
+        return (getFile().isDirectory()?"文件夹":"文件")+":"+getFile().getName();
     }
 }
